@@ -30,18 +30,22 @@ fieldset { border: 0; margin: 0; padding: 0; }
 /* ==|== primary styles =====================================================
    Author: 
    ========================================================================== */
-h2 { font-family:'Vollkorn', Arial, serif; font-weight: 400; }
-.power h1, .power h2, .power h3, .power p {font-family:'Vollkorn', Arial, serif;}
+
+h2 { font-family:'Vollkorn', Arial, Helvetica, serif; font-weight: 400; }
+.power h1, .power h2, .power h3, .power p {font-family:'Vollkorn', Arial, Helvetica, serif;}
+
 #container {margin: 0;padding: 0;}
 header {margin: 0;padding: 0;}
+
 #banner {
 background: url("../img/bkg-banner.png") repeat-x scroll 0 0 transparent;
 height: 60px;
 }
 #banner div {width: 730px;margin: 0 auto;}
-#banner h1 {float:left;line-height: 60px;}
+#banner h1, #banner p.tag {float:left;line-height: 60px;margin-right: 10px;}
 #banner p {float:right;line-height: 60px;}
 #banner img {float:right;margin: 3px 0 0 4px;}
+
 header, #main {
 width: 710px;
 margin: 0 auto;
@@ -59,6 +63,26 @@ height: 34px;
 margin: 20px auto;
 text-indent: -2000em;
 }
+.power-100 header h1 {
+background: none repeat scroll 0 0 #000;
+padding: 10px 10px 10px 18px;
+color: #fff;
+height: 100%;
+text-align: left;
+text-indent: 0;
+}
+.power-100 header h1 span {
+bottom: 2px;
+font-size: 20px;
+font-weight: normal;
+position: relative;
+}
+.power-100 header p {
+font-size: 16px;
+padding: 0 35px;
+text-align: left;
+}
+
 #main ul {margin:0;padding: 0;float: left;}
 li {list-style: none;float:left;display: inline;}
 
@@ -102,6 +126,7 @@ li {list-style: none;float:left;display: inline;}
 
 .power a {color: #000;text-decoration: none;float: left;width: 234px; margin: 8px auto 0;}
 .power a:active {color: #7c0b00;}
+
 .trigger {text-align: center;cursor: pointer;position: relative;top:245px;}
 .toggle_container {width: 590px;float: left;}
 .block {margin-top: 20px;}
@@ -109,6 +134,33 @@ li {list-style: none;float:left;display: inline;}
 .trigger h3 {text-transform: uppercase;}
 .trigger p {font-size: 11.5px;}
 .block h3 {padding-top: 20px;}
+
+.rankings ul.legend {
+background: url("../img/bkg-rank.png") repeat-x;
+width: 100%;
+line-height: 25px;
+border: none;
+height: 25px;
+}
+.rankings ul.legend li {
+border: none;
+line-height: 25px;
+}
+.rank {
+width: 78px;
+height:60px;
+line-height: 60px;
+text-align: center;
+border-bottom: 1px solid #ccc;
+}
+.name {
+width: 304px;
+height:60px;border-bottom: 1px solid #ccc;
+border-left:1px solid #ccc;
+border-right: 1px solid #ccc; 
+}
+.detail {width: 322px;height:60px;border-bottom: 1px solid #ccc;}
+
 .see-the-rest {
 background: url("../img/see-the-rest.png") no-repeat scroll 0 0 transparent;
 height: 54px;
