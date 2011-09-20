@@ -2,22 +2,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; background: #f0efed; }
-
-/* 
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate
- * Also: hot pink! (or customize the background color to match your design)
- */
-
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection {text-shadow: none; }
+::selection {text-shadow: none; }
 h1,h2,h3,h4,h5,h6,p,a {margin: 0;padding: 0;}
 a { color: #00e; }
 a:visited { color: #551a8b; }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
-abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
@@ -67,27 +59,54 @@ height: 34px;
 margin: 20px auto;
 text-indent: -2000em;
 }
-#main ul {margin: 0 0 0 -30px;padding: 0;float: left;}
+#main ul {margin:0;padding: 0;float: left;}
 li {list-style: none;float:left;display: inline;}
+
 .power {margin:0;width: 234px;height: 370px;background: url("../img/power-top-9.png") no-repeat scroll left top transparent;}
-.power-01 {background-position: 0 0;}
-.power-01:hover {background-position: -235px 0;margin-left: -15px;}
-.power-02 {background-position: 0 -365px;}
-.power-03 {background-position: 0 -730px;}
-.power-04 {background-position: 0 0;}
-.power-05 {background-position: 0 0;}
-.power-06 {background-position: 0 0;}
-.power-07 {background-position: 0 0;}
-.power-08 {background-position: 0 0;}
-.power-09 {background-position: 0 0;}
 
-.power a {color: #000;text-decoration: none;float: left;width: 203px; margin: 8px auto 0;}
+.power-01 {margin:0 15px 0 -15px;background-position: 15px 0;}
+.power-01:hover {margin: 0 15px 0 -15px;background-position: -234px 0;}
+.power-01 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -1px transparent;}
+
+.power-02 {margin:0 15px 0 -15px; background-position: 15px -375px;}
+.power-02:hover {margin: 0 15px 0 -15px;background-position: -235px -375px;}
+.power-02 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -31px transparent;}
+
+.power-03 {margin:0 15px 0 -15px; background-position: 15px -750px;}
+.power-03:hover {margin: 0 15px 0 -15px;background-position: -235px -750px;}
+.power-03 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -61px transparent;}
+
+.power-04 {margin:0 15px 0 -15px;background-position: 15px -1125px;}
+.power-04:hover {margin: 0 15px 0 -15px;background-position: -235px -1125px;}
+.power-04 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -91px transparent;}
+
+.power-05 {margin:0 15px 0 -15px; background-position: 15px -1500px;}
+.power-05:hover {margin: 0 15px 0 -15px;background-position: -235px -1500px;}
+.power-05 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -121px transparent;}
+
+.power-06 {margin:0 15px 0 -15px; background-position: 15px -1875px;}
+.power-06:hover {margin: 0 15px 0 -15px;background-position: -235px -1875px;}
+.power-06 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -151px transparent;}
+
+.power-07 {margin:0 15px 0 -15px;background-position: 15px -2250px;}
+.power-07:hover {margin: 0 15px 0 -15px;background-position: -235px -2250px;}
+.power-07 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -181px transparent;}
+
+.power-08 {margin:0 15px 0 -15px; background-position: 15px -2625px;}
+.power-08:hover {margin: 0 15px 0 -15px;background-position: -235px -2625px;}
+.power-08 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -211px transparent;}
+
+.power-09 {margin:0 15px 0 -15px; background-position: 15px -3000px;}
+.power-09:hover {margin: 0 15px 0 -15px;background-position: -235px -3000px;}
+.power-09 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -241px transparent;}
+
+.power a {color: #000;text-decoration: none;float: left;width: 234px; margin: 8px auto 0;}
 .power a:active {color: #7c0b00;}
-.trigger {text-align: center;cursor: pointer;}
-
+.trigger {text-align: center;cursor: pointer;position: relative;top:245px;}
 .toggle_container {width: 590px;float: left;}
 .block {margin-top: 20px;}
-.trigger h3 {padding-top: 270px;text-transform: uppercase;}
+.trigger .rank {font-weight: bold; font-size: 18px;color: #fff;height: 25px;letter-spacing: 0.08em;padding-left: 2px;}
+.trigger h3 {text-transform: uppercase;}
 .trigger p {font-size: 11.5px;}
 .block h3 {padding-top: 20px;}
 .see-the-rest {
