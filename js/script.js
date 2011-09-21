@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
 
 	//Hide (Collapse) the toggle containers on load
@@ -10,8 +11,8 @@ $(document).ready(function(){
 	});
 
 });
+*/
 
-/*
 $(function() {
       $('toggle_container').hide();
       $('.power').click(function() { // When an item is clicked
@@ -26,7 +27,6 @@ $(function() {
       });
 });
 
-*/
 
 
 

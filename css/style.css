@@ -19,8 +19,7 @@ small { font-size: 85%; }
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-ul, ol { margin: 0; padding: 0; }
-dd { margin: 0 0 0 40px; }
+ul, ol, dd { margin: 0; padding: 0; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 svg:not(:root) { overflow: hidden; }
@@ -84,12 +83,12 @@ text-align: left;
 }
 
 #main ul {margin:0;padding: 0;float: left;}
-li {list-style: none;float:left;display: inline;}
+li, dt, dd {list-style: none;float:left;display: inline;}
 
 .power {margin:0;width: 234px;height: 370px;background: url("../img/power-top-9.png") no-repeat scroll left top transparent;}
 
 .power-01 {margin:0 15px 0 -15px;background-position: 15px 0;}
-.power-01:hover {margin: 0 15px 0 -15px;background-position: -234px 0;}
+.power-01:hover, .active {margin: 0 15px 0 -15px;background-position: -234px 0;}
 .power-01 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -1px transparent;}
 
 .power-02 {margin:0 15px 0 -15px; background-position: 15px -375px;}
@@ -130,36 +129,109 @@ li {list-style: none;float:left;display: inline;}
 .trigger {text-align: center;cursor: pointer;position: relative;top:245px;}
 .toggle_container {width: 590px;float: left;}
 .block {margin-top: 20px;}
-.trigger .rank {font-weight: bold; font-size: 18px;color: #fff;height: 25px;letter-spacing: 0.08em;padding-left: 2px;}
+.trigger .rank {
+font-weight: bold; 
+font-size: 18px;
+color: #fff;
+height: 25px;
+letter-spacing: 0.08em;
+padding-left: 2px;
+
+}
 .trigger h3 {text-transform: uppercase;}
 .trigger p {font-size: 11.5px;}
 .block h3 {padding-top: 20px;}
 
+header .nav-alt {float: left;width: 100%;margin: 25px 0;}
+header .nav-alt a.top-09 {float: left;
+margin-left: 15px;
+color: #660000;
+background: url("../img/arrows.png") no-repeat scroll -27px center transparent;
+padding-left: 10px;
+}
+header .nav-alt ul {float: right;margin-right: 15px;padding: 0 5px;}
+header .nav-alt ul a {text-decoration: none;display: block;}
+header .nav-alt ul .email {background: url("../img/icons.gif") no-repeat 0 center;width: 47px;padding-right: 10px;}
+header .nav-alt ul .print {background: url("../img/icons.gif") no-repeat scroll -57px center transparent;width: 47px;border-left: 1px dotted #000;padding-right: 20px;}
+header .nav-alt ul .share {background: url("../img/icons.gif") no-repeat scroll -126px center transparent;width: 42px;border-left: 1px dotted #000;padding-right: 20px;}
+
 .rankings ul.legend {
 background: url("../img/bkg-rank.png") repeat-x;
 width: 100%;
-line-height: 25px;
+line-height: 23px;
 border: none;
-height: 25px;
+height: 23px;
+text-transform: uppercase;
 }
 .rankings ul.legend li {
 border: none;
 line-height: 25px;
 }
-.rank {
-width: 78px;
+.legend .rank {width: 11%;}
+.legend .rank p {text-align: center;}
+.legend .name {width: 42%;}
+.legend .detail {width: 46%;}
+.legend .name p, .legend .detail p {margin-left: 5px;}
+
+ul.directory {float: left;margin: 0;padding: 0;width: 100%;}
+ul.directory:hover {background: #fff;cursor: pointer;}
+
+li.rank {
+width: 11%;
 height:60px;
 line-height: 60px;
 text-align: center;
 border-bottom: 1px solid #ccc;
+position: relative;
 }
-.name {
-width: 304px;
+li.rank h3 {
+margin: 0 auto;
+width:78px;
+height: 43px;
+font-family: 'Vollkorn', Arial, Helvetica, serif;
+color: #fff;
+position: relative;
+bottom: 26px;
+letter-spacing: .08em;
+}
+li.rank .bkg {
+height: 25px; 
+position: relative; 
+top:15px; 
+}
+
+li.rank .one {background:url("../img/rankings.png") no-repeat scroll 14px 1px transparent;}
+li.rank .two {background:url("../img/rankings.png") no-repeat scroll 14px -29px transparent;}
+li.rank .three {background:url("../img/rankings.png") no-repeat scroll 14px -59px transparent;}
+li.rank .four {background:url("../img/rankings.png") no-repeat scroll 14px -89px transparent;}
+li.rank .five {background:url("../img/rankings.png") no-repeat scroll 14px -119px transparent;}
+li.rank .six {background:url("../img/rankings.png") no-repeat scroll 14px -149px transparent;}
+li.rank .seven {background:url("../img/rankings.png") no-repeat scroll 14px -179px transparent;}
+li.rank .eight {background:url("../img/rankings.png") no-repeat scroll 14px -209px transparent;}
+li.rank .nine {background:url("../img/rankings.png") no-repeat scroll 14px -239px transparent;}
+li.rank .ten {background:url("../img/rankings.png") no-repeat scroll 14px -269px transparent;}
+
+li.name {
+width: 42%;
 height:60px;border-bottom: 1px solid #ccc;
 border-left:1px solid #ccc;
 border-right: 1px solid #ccc; 
 }
-.detail {width: 322px;height:60px;border-bottom: 1px solid #ccc;}
+li.name h2 {margin: 10px 0 0 10px;}
+li.name h3 {margin: 0 0 0 10px;font: 12px 'Vollkorn', Arial, Helvetica, serif;}
+
+li.detail {width: 46%;height:60px;border-bottom: 1px solid #ccc;}
+li.detail p {margin: 7px 0 0 10px;font-size: 12px;}
+li.detail p a {background: url("../img/arrow-right.png") no-repeat scroll 0 center transparent;color: #660000;padding-left: 10px;}
+
+.report {float:left;background: #fff;}
+.story {margin: 20px 0 0 78px;}
+.story .image {
+background: url("../img/power-top-9.png") no-repeat scroll transparent;
+height: 300px;
+width: 200px;
+
+}
 
 .see-the-rest {
 background: url("../img/see-the-rest.png") no-repeat scroll 0 0 transparent;
@@ -209,7 +281,7 @@ visibility: hidden;
 .invisible { visibility: hidden; }
 
 /* Contain floats: h5bp.com/q */ 
-.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:before, .clearfix:after { content: "."; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
