@@ -86,9 +86,13 @@ text-align: left;
 li, dt, dd {list-style: none;float:left;display: inline;}
 
 .power {margin:0;width: 234px;height: 370px;background: url("../img/power-top-9.png") no-repeat scroll left top transparent;}
-
+#main .active {
+-webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .5);
+-moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .5);
+box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .5);
+}
 .power-01 {margin:0 15px 0 -15px;background-position: 15px 0;}
-.power-01:hover, .active {margin: 0 15px 0 -15px;background-position: -234px 0;}
+.power-01:hover {margin: 0 15px 0 -15px;background-position: -234px 0;}
 .power-01 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -1px transparent;}
 
 .power-02 {margin:0 15px 0 -15px; background-position: 15px -375px;}
@@ -171,7 +175,7 @@ line-height: 25px;
 .legend .rank p {text-align: center;}
 .legend .name {width: 42%;}
 .legend .detail {width: 46%;}
-.legend .name p, .legend .detail p {margin-left: 5px;}
+.legend .name p, .legend .detail p {margin: 0 0 0 5px;}
 
 ul.directory {float: left;margin: 0;padding: 0;width: 100%;}
 ul.directory:hover {background: #fff;cursor: pointer;}
@@ -183,6 +187,7 @@ line-height: 60px;
 text-align: center;
 border-bottom: 1px solid #ccc;
 position: relative;
+z-index: 9;
 }
 li.rank h3 {
 margin: 0 auto;
@@ -199,17 +204,34 @@ height: 25px;
 position: relative; 
 top:15px; 
 }
+.story .rank {position: relative;bottom: 20px;right: 78px;}
+.story .rank h3 {
+bottom: 6px;
+color: #FFFFFF;
+font-family: 'Vollkorn',Arial,Helvetica,serif;
+height: 43px;
+letter-spacing: 0.08em;
+margin: 0 auto;
+position: relative;
+right: 247px;
+width: 78px;
+}
+.story .rank .bkg {
+height: 25px; 
+position: relative; 
+top:15px; 
+}
 
-li.rank .one {background:url("../img/rankings.png") no-repeat scroll 14px 1px transparent;}
-li.rank .two {background:url("../img/rankings.png") no-repeat scroll 14px -29px transparent;}
-li.rank .three {background:url("../img/rankings.png") no-repeat scroll 14px -59px transparent;}
-li.rank .four {background:url("../img/rankings.png") no-repeat scroll 14px -89px transparent;}
-li.rank .five {background:url("../img/rankings.png") no-repeat scroll 14px -119px transparent;}
-li.rank .six {background:url("../img/rankings.png") no-repeat scroll 14px -149px transparent;}
-li.rank .seven {background:url("../img/rankings.png") no-repeat scroll 14px -179px transparent;}
-li.rank .eight {background:url("../img/rankings.png") no-repeat scroll 14px -209px transparent;}
-li.rank .nine {background:url("../img/rankings.png") no-repeat scroll 14px -239px transparent;}
-li.rank .ten {background:url("../img/rankings.png") no-repeat scroll 14px -269px transparent;}
+.rank .one {background:url("../img/rankings.png") no-repeat scroll 14px 1px transparent;}
+.rank .two {background:url("../img/rankings.png") no-repeat scroll 14px -29px transparent;}
+.rank .three {background:url("../img/rankings.png") no-repeat scroll 14px -59px transparent;}
+.rank .four {background:url("../img/rankings.png") no-repeat scroll 14px -89px transparent;}
+.rank .five {background:url("../img/rankings.png") no-repeat scroll 14px -119px transparent;}
+.rank .six {background:url("../img/rankings.png") no-repeat scroll 14px -149px transparent;}
+.rank .seven {background:url("../img/rankings.png") no-repeat scroll 14px -179px transparent;}
+.rank .eight {background:url("../img/rankings.png") no-repeat scroll 14px -209px transparent;}
+.rank .nine {background:url("../img/rankings.png") no-repeat scroll 14px -239px transparent;}
+.rank .ten {background:url("../img/rankings.png") no-repeat scroll 14px -269px transparent;}
 
 li.name {
 width: 42%;
@@ -217,22 +239,48 @@ height:60px;border-bottom: 1px solid #ccc;
 border-left:1px solid #ccc;
 border-right: 1px solid #ccc; 
 }
-li.name h2 {margin: 10px 0 0 10px;}
-li.name h3 {margin: 0 0 0 10px;font: 12px 'Vollkorn', Arial, Helvetica, serif;}
+.story .name {
+float: left;
+margin-top: -90px;
+}
+.name h2 {margin: 10px 0 0 10px;}
+.name h3 {margin: 0 0 0 10px;font: 12px 'Vollkorn', Arial, Helvetica, serif;}
 
 li.detail {width: 46%;height:60px;border-bottom: 1px solid #ccc;}
 li.detail p {margin: 7px 0 0 10px;font-size: 12px;}
-li.detail p a {background: url("../img/arrow-right.png") no-repeat scroll 0 center transparent;color: #660000;padding-left: 10px;}
-
-.report {float:left;background: #fff;}
-.story {margin: 20px 0 0 78px;}
-.story .image {
-background: url("../img/power-top-9.png") no-repeat scroll transparent;
-height: 300px;
-width: 200px;
-
+li.detail p a {
+background: url("../img/arrow-right.png") no-repeat scroll 0 center transparent;
+color: #660000;
+float: right;
+margin-right: 10px;
+padding-left: 10px;
 }
 
+.report {
+float:left;
+width: 100%;
+background: #fff;
+margin-top: -61px;
+position: relative;
+z-index: 99;
+}
+.story {margin: 20px 0 0 78px;}
+.story .supplement {
+float: left;
+margin: -233px 0 0 200px;
+padding: 35px;
+width: 356px;
+}
+.story .image {
+background: url("../img/power-top-9.png") no-repeat scroll transparent;
+margin-top: -65px;
+height: 240px;
+width: 165px;
+}
+.story p {
+float: left;
+margin: 0 0 10px;
+}
 .see-the-rest {
 background: url("../img/see-the-rest.png") no-repeat scroll 0 0 transparent;
 height: 54px;

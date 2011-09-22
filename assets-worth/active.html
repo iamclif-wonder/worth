@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title></title>
+
+<script type="text/javascript">
+$('a.button').each(function () {
+    var text = $(this).text();
+
+    $(this).append('<span class="hover">'+text+'</span>');
+    var $span = $('> span.hover', this).css('opacity', 0);
+
+    $(this).hover(function () {
+        $span.stop().fadeTo(500, 1);
+    }, function () {
+        $span.stop().fadeTo(500, 0);
+    }).click (function () {
+        $('a.button > span.active').removeClass();
+        $(this).empty().append('<span class="active">'+text+'</span>');
+    });
+});
+
+</script>
+
+<style type="text/css">
+a:hover {color: green;}
+a:active {color: aqua;}
+</style>
+
+</head>
+<body>
+
+<ul class="buttons">
+<li><a class="button" href="#">button 1</a></li>
+<li><a class="button" href="#">button 1</a></li>
+<li><a class="button" href="#">button 1</a></li>
+</ul>
+	
+</body>
+</html>
