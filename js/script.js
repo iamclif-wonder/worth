@@ -13,6 +13,7 @@ $(document).ready(function(){
 });
 */
 
+/*
 $(function() {
       $('toggle_container').hide();
       $('.power').click(function() { // When an item is clicked
@@ -26,6 +27,7 @@ $(function() {
             }
       });
 });
+*/
 
 
 

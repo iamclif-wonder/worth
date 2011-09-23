@@ -11,10 +11,7 @@ a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 b, strong { font-weight: bold; }
-blockquote { margin: 1em 40px; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
 small { font-size: 85%; }
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
@@ -22,9 +19,7 @@ sub { bottom: -0.25em; }
 ul, ol, dd { margin: 0; padding: 0; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-svg:not(:root) { overflow: hidden; }
-form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
+
 
 /* ==|== primary styles =====================================================
    Author: 
@@ -100,61 +95,99 @@ display: inline;
 margin:0;
 width: 234px;
 height: 370px;
-background: url("../img/power-top-9.png") no-repeat scroll left top transparent;
 position: absolute;
 }
+.power:hover {background: url("../img/hover.png") no-repeat scroll 0px 17px transparent;}
+
 #main .active {
 background: url("../img/hover.png") no-repeat scroll 1px 17px transparent;
 position: relative;
 z-index: 9;
 }
-.power-01 {margin:0 15px 0 -15px;background-position: 15px 0;left: 0;}
-.power-01:hover {margin: 0 15px 0 -15px;background-position: -234px 0;}
+.power-01 {margin:0 15px 0 -15px;left: 0;}
 .power-01 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -1px transparent;}
 
-.power-02 {margin:0 15px 0 -15px; background-position: 15px -375px;left: 234px;}
-.power-02:hover {margin: 0 15px 0 -15px;background-position: -235px -375px;}
+.power-02 {margin:0 15px 0 -15px; left: 234px;}
 .power-02 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -31px transparent;}
 
-.power-03 {margin:0 15px 0 -15px; background-position: 15px -750px;right: 0;}
-.power-03:hover {margin: 0 15px 0 -15px;background-position: -235px -750px;}
+.power-03 {margin:0 15px 0 -15px; right: 0;}
 .power-03 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -61px transparent;}
 
-.power-04 {margin:0 15px 0 -15px;background-position: 15px -1125px;left: 0;}
-.power-04:hover {margin: 0 15px 0 -15px;background-position: -235px -1125px;}
+.power-04 {margin:0 15px 0 -15px; left: 0;}
 .power-04 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -91px transparent;}
 
-.power-05 {margin:0 15px 0 -15px; background-position: 15px -1500px;left: 234px;}
-.power-05:hover {margin: 0 15px 0 -15px;background-position: -235px -1500px;}
+.power-05 {margin:0 15px 0 -15px; left: 234px;}
 .power-05 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -121px transparent;}
 
-.power-06 {margin:0 15px 0 -15px; background-position: 15px -1875px;right: 0;}
-.power-06:hover {margin: 0 15px 0 -15px;background-position: -235px -1875px;}
+.power-06 {margin:0 15px 0 -15px; right: 0;}
 .power-06 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -151px transparent;}
 
-.power-07 {margin:0 15px 0 -15px;background-position: 15px -2250px;left: 0;}
-.power-07:hover {margin: 0 15px 0 -15px;background-position: -235px -2250px;}
+.power-07 {margin:0 15px 0 -15px; left: 0;}
 .power-07 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -181px transparent;}
 
-.power-08 {margin:0 15px 0 -15px; background-position: 15px -2625px;left: 234px;}
-.power-08:hover {margin: 0 15px 0 -15px;background-position: -235px -2625px;}
+.power-08 {margin:0 15px 0 -15px; left: 234px;}
 .power-08 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -211px transparent;}
 
-.power-09 {margin:0 15px 0 -15px; background-position: 15px -3000px;right: 0;}
-.power-09:hover {margin: 0 15px 0 -15px;background-position: -235px -3000px;}
+.power-09 {margin:0 15px 0 -15px; right: 0;}
 .power-09 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -241px transparent;}
 
-.power a {color: #000;text-decoration: none;float: left;width: 234px; margin: 8px auto 0;}
+.power a {
+color: #000;
+text-decoration: none;
+float: left;
+position: relative;
+width: 234px; 
+margin: 8px auto 0;
+}
 .power a:active {color: #7c0b00;}
 
-.trigger {text-align: center;cursor: pointer;position: relative;top:245px;}
+.trigger {
+text-align: center;
+cursor: pointer;
+position: relative;
+top:245px;
+}
 .trigger img {
 position: relative;
 bottom: 215px;
 right: 2px;
 }
-.toggle_container {width: 590px;height:450px;float: left;position: relative;top: 340px;}
-.block {margin-top: 20px;}
+.toggle_container {
+width: 676px;
+height:540px;
+float: left;
+position: relative;
+top: 345px;
+}
+.supplement {
+margin-top: 20px; 
+padding:20px;
+background: none repeat scroll 0 0 #FFFFFF;
+-webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, .1);
+-moz-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, .1);
+box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, .1);
+}
+.supplement p {
+padding-bottom: 15px;
+}
+.left {
+background: url("../img/arrow-up.png") no-repeat scroll 90px 0 transparent;
+position: relative; 
+left: 0;
+top:20px;
+}
+.center {
+background: url("../img/arrow-up.png") no-repeat scroll center 0px transparent;
+position: relative; 
+left: 0;
+top:20px;
+}
+.right {
+background: url("../img/arrow-up.png") no-repeat scroll 560px 0 transparent;
+position: relative; 
+right: 0;
+top:20px;
+}
 .trigger .rank {
 font-weight: bold; 
 font-size: 18px;
@@ -264,7 +297,8 @@ top:15px;
 .rank .seven {background:url("../img/rankings.png") no-repeat scroll 14px -179px transparent;}
 .rank .eight {background:url("../img/rankings.png") no-repeat scroll 14px -209px transparent;}
 .rank .nine {background:url("../img/rankings.png") no-repeat scroll 14px -239px transparent;}
-.rank .ten {background:url("../img/rankings.png") no-repeat scroll 14px -269px transparent;}
+.rank .ten {background:url("../img/rankings.png") no-repeat scroll 8px -269px transparent;}
+.story .rank .ten {background:url("../img/rankings.png") no-repeat scroll 15px -269px transparent;}
 
 li.name {
 width: 42%;
@@ -274,7 +308,7 @@ border-right: 1px solid #ccc;
 }
 .story .name {
 float: left;
-margin-top: -90px;
+margin: -88px 0 0 1px;
 }
 .name h2 {margin: 10px 0 0 10px;}
 .name h3 {margin: 0 0 0 10px;font: 12px 'Vollkorn', Arial, Helvetica, serif;}
@@ -297,17 +331,24 @@ margin-top: -61px;
 position: relative;
 z-index: 99;
 }
-.report .btn-close {
+.btn-close {
 float: right;
 margin: 10px;
 cursor: pointer;
+position: relative;
+z-index: 9;
+background: none;
 }
+
 .story {margin: 20px 0 0 78px;}
 .story .supplement {
 float: left;
 margin: -233px 0 0 200px;
 padding: 35px;
 width: 356px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
 }
 .story .image {
 background: url("../img/power-top-9.png") no-repeat scroll transparent;
@@ -326,7 +367,7 @@ width: 138px;
 margin: 20px auto;
 display: block;
 }
-.more {height: 54px; width: 660px;float: left;margin: 0 auto;}
+.more {height: 54px; width: 660px;float: left;margin: 25px auto 0;}
 
 .clear:after {
 content: ".";
@@ -426,40 +467,3 @@ visibility: hidden;
 .story .i098 {background-position: 0 -377px;}
 .story .i099 {background-position: 0 -754px;}
 .story .i100 {background-position: 0 -1131px;}
-
-
-
-
-
-
-
-
-
-
-
-/* ==|== non-semantic helper classes ========================================
-   Please define your styles before this section.
-   ========================================================================== */
-
-/* For image replacement */
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
-.ir br { display: none; }
-
-/* Hide from both screenreaders and browsers: h5bp.com/u */
-.hidden { display: none !important; visibility: hidden; }
-
-/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-
-/* Hide visually and from screenreaders, but maintain layout */
-.invisible { visibility: hidden; }
-
-/* Contain floats: h5bp.com/q */ 
-.clearfix:before, .clearfix:after { content: "."; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-
-
