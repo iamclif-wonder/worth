@@ -29,7 +29,7 @@ h2 { font-family:'Vollkorn', Arial, Helvetica, serif; font-weight: 400; }
 .power h1, .power h2, .power h3, .power p {font-family:'Vollkorn', Arial, Helvetica, serif;}
 
 #container {margin: 0;padding: 0;}
-header {margin: 0;padding: 0;}
+#header {margin: 0;padding: 0;}
 
 #banner {
 background: url("../img/bkg-banner.png") repeat-x scroll 0 0 transparent;
@@ -40,24 +40,24 @@ height: 60px;
 #banner p {float:right;line-height: 60px;}
 #banner img {float:right;margin: 3px 0 0 4px;}
 
-header, #main {
+#header, #main {
 width: 710px;
 margin: 0 auto;
 }
-header {text-align: center;}
-header h1 {
+#header {text-align: center;}
+#header h1 {
 background: url("../img/logo-power-100.gif") no-repeat scroll 0 0 transparent;
 height: 106px;
 margin: 20px auto;
 text-indent: -2000em;
 }
-header h3 {
+#header h3 {
 background: url("../img/tagline-100-most-powerful.gif") no-repeat scroll 0 0 transparent;
 height: 34px;
 margin: 20px auto;
 text-indent: -2000em;
 }
-.power-100 header h1 {
+.power-100 #header h1 {
 background: none repeat scroll 0 0 #000;
 padding: 10px 10px 10px 18px;
 color: #fff;
@@ -65,13 +65,13 @@ height: 100%;
 text-align: left;
 text-indent: 0;
 }
-.power-100 header h1 span {
+.power-100 #header h1 span {
 bottom: 2px;
 font-size: 20px;
 font-weight: normal;
 position: relative;
 }
-.power-100 header p {
+.power-100 #header p {
 font-size: 16px;
 padding: 0 35px;
 text-align: left;
@@ -79,7 +79,6 @@ text-align: left;
 
 #main ul {
 width: 710px;
-min-height: 340px;
 margin:0;
 padding: 0;
 float: left;
@@ -95,40 +94,39 @@ display: inline;
 margin:0;
 width: 234px;
 height: 370px;
-position: absolute;
 }
-.power:hover {background: url("../img/hover.png") no-repeat scroll 0px 17px transparent;}
+.power:hover {background: url("../img/hover.png") no-repeat scroll 3px 14px transparent;}
 
-#main .active {
-background: url("../img/hover.png") no-repeat scroll 1px 17px transparent;
+.active {
+background: url("../img/hover.png") no-repeat scroll 3px 14px transparent;
 position: relative;
 z-index: 9;
 }
-.power-01 {margin:0 15px 0 -15px;left: 0;}
+.power-01 {}
 .power-01 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -1px transparent;}
 
-.power-02 {margin:0 15px 0 -15px; left: 234px;}
+.power-02 {position: absolute; left: 234px;}
 .power-02 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -31px transparent;}
 
-.power-03 {margin:0 15px 0 -15px; right: 0;}
+.power-03 {position: absolute; right: 0;}
 .power-03 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -61px transparent;}
 
-.power-04 {margin:0 15px 0 -15px; left: 0;}
+.power-04 {}
 .power-04 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -91px transparent;}
 
-.power-05 {margin:0 15px 0 -15px; left: 234px;}
+.power-05 {position: absolute; left: 234px;}
 .power-05 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -121px transparent;}
 
-.power-06 {margin:0 15px 0 -15px; right: 0;}
+.power-06 {position: absolute; right: 0;}
 .power-06 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -151px transparent;}
 
-.power-07 {margin:0 15px 0 -15px; left: 0;}
+.power-07 {}
 .power-07 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -181px transparent;}
 
-.power-08 {margin:0 15px 0 -15px; left: 234px;}
+.power-08 {position: absolute; left: 234px;}
 .power-08 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -211px transparent;}
 
-.power-09 {margin:0 15px 0 -15px; right: 0;}
+.power-09 {position: absolute; right: 0;}
 .power-09 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -241px transparent;}
 
 .power a {
@@ -139,7 +137,7 @@ position: relative;
 width: 234px; 
 margin: 8px auto 0;
 }
-.power a:active {color: #7c0b00;}
+.power a {color: #7c0b00;}
 
 .trigger {
 text-align: center;
@@ -153,11 +151,10 @@ bottom: 215px;
 right: 2px;
 }
 .toggle_container {
+display: none;
 width: 676px;
-height:540px;
 float: left;
-position: relative;
-top: 345px;
+margin:-20px 0 0 15px;
 }
 .supplement {
 margin-top: 20px; 
@@ -189,8 +186,9 @@ right: 0;
 top:20px;
 }
 .trigger .rank {
+font-family: "Arial Black",serif;
 font-weight: bold; 
-font-size: 18px;
+line-height: 21px;
 color: #fff;
 height: 25px;
 letter-spacing: 0.08em;
@@ -211,18 +209,18 @@ z-index: 99;
 }
 .block h3 {padding-top: 20px;}
 
-header .nav-alt {float: left;width: 100%;margin: 25px 0;}
-header .nav-alt a.top-09 {float: left;
+#header .nav-alt {float: left;width: 100%;padding: 25px 0;}
+#header .nav-alt a.top-09 {float: left;
 margin-left: 15px;
 color: #660000;
 background: url("../img/arrows.png") no-repeat scroll -27px center transparent;
 padding-left: 10px;
 }
-header .nav-alt ul {float: right;margin-right: 15px;padding: 0 5px;}
-header .nav-alt ul a {text-decoration: none;display: block;}
-header .nav-alt ul .email {background: url("../img/icons.gif") no-repeat 0 center;width: 47px;padding-right: 10px;}
-header .nav-alt ul .print {background: url("../img/icons.gif") no-repeat scroll -57px center transparent;width: 47px;border-left: 1px dotted #000;padding-right: 20px;}
-header .nav-alt ul .share {background: url("../img/icons.gif") no-repeat scroll -126px center transparent;width: 42px;border-left: 1px dotted #000;padding-right: 20px;}
+#header .nav-alt ul {float: right;margin-right: 15px;padding: 0 5px;}
+#header .nav-alt ul a {text-decoration: none;display: block;}
+#header .nav-alt ul .email {background: url("../img/icons.gif") no-repeat 0 center;width: 47px;padding-right: 10px;}
+#header .nav-alt ul .print {background: url("../img/icons.gif") no-repeat scroll -57px center transparent;width: 47px;border-left: 1px dotted #000;padding-right: 20px;}
+#header .nav-alt ul .share {background: url("../img/icons.gif") no-repeat scroll -126px center transparent;width: 42px;border-left: 1px dotted #000;padding-right: 20px;}
 
 .power-100 #main.rankings ul.legend {
 background: url("../img/bkg-rank.png") repeat-x;
@@ -259,11 +257,16 @@ li.rank h3 {
 margin: 0 auto;
 width:78px;
 height: 43px;
-font-family: 'Vollkorn', Arial, Helvetica, serif;
+font-family: "Arial Black",serif;
+font-weight: bold;
 color: #fff;
 position: relative;
 bottom: 26px;
 letter-spacing: .08em;
+}
+.ie7 li.rank h3 {
+bottom: 27px;
+right: 1px;
 }
 li.rank .bkg {
 height: 25px; 
@@ -274,13 +277,24 @@ top:15px;
 .story .rank h3 {
 bottom: 6px;
 color: #FFFFFF;
-font-family: 'Vollkorn',Arial,Helvetica,serif;
+font-family: "Arial Black",serif;
+font-weight: bold;
 height: 43px;
 letter-spacing: 0.08em;
 margin: 0 auto;
 position: relative;
-right: 247px;
+right: 252px;
 width: 78px;
+}
+.story .rank .bkg {
+height: 25px; 
+position: relative; 
+top:15px; 
+}
+
+.ie7 .story .rank h3 {
+bottom: 8px;
+right: 255px;
 }
 .story .rank .bkg {
 height: 25px; 
@@ -309,6 +323,8 @@ border-right: 1px solid #ccc;
 .story .name {
 float: left;
 margin: -88px 0 0 1px;
+position: relative;
+z-index: 99;
 }
 .name h2 {margin: 10px 0 0 10px;}
 .name h3 {margin: 0 0 0 10px;font: 12px 'Vollkorn', Arial, Helvetica, serif;}
@@ -318,11 +334,11 @@ li.detail p {margin: 7px 0 0 10px;font-size: 12px;}
 li.detail p a {
 background: url("../img/arrow-right.png") no-repeat scroll 0 center transparent;
 color: #660000;
-float: right;
 margin-right: 10px;
 padding-left: 10px;
+position: absolute;
+right: 0;
 }
-
 .report {
 float:left;
 width: 100%;
@@ -339,22 +355,25 @@ position: relative;
 z-index: 9;
 background: none;
 }
-
 .story {margin: 20px 0 0 78px;}
 .story .supplement {
 float: left;
-margin: -233px 0 0 200px;
-padding: 35px;
-width: 356px;
+padding: 0 50px 0 10px;
+margin: 0;
+width: 550px;
+position: relative;
+z-index: 9;
 -webkit-box-shadow: none;
 -moz-box-shadow: none;
 box-shadow: none;
 }
-.story .image {
-background: url("../img/power-top-9.png") no-repeat scroll transparent;
-margin-top: -65px;
-height: 240px;
-width: 185px;
+.story .supplement.with-img {
+width: 356px;
+float: left;
+}
+.story img {
+float: left;
+clear: both;
 }
 .story p {
 float: left;
@@ -376,94 +395,3 @@ clear: both;
 height: 0;
 visibility: hidden;
 }
-
-.story .i011 {background-position: 0 -377px;}
-.story .i012 {background-position: 0 -754px;}
-.story .i013 {background-position: 0 -1131px;}
-.story .i014 {background-position: 0 -1508px;}
-.story .i015 {background-position: 0 -1885px;}
-.story .i016 {background-position: 0 -2262px;}
-.story .i017 {background-position: 0 -2639px;}
-.story .i018 {background-position: 0 -377px;}
-.story .i019 {background-position: 0 -754px;}
-.story .i020 {background-position: 0 -1131px;}
-.story .i021 {background-position: 0 -1508px;}
-.story .i022 {background-position: 0 -1885px;}
-.story .i023 {background-position: 0 -2262px;}
-.story .i024 {background-position: 0 -2639px;}
-.story .i025 {background-position: 0 -1885px;}
-.story .i026 {background-position: 0 -2262px;}
-.story .i027 {background-position: 0 -2639px;}
-.story .i028 {background-position: 0 -377px;}
-.story .i029 {background-position: 0 -754px;}
-.story .i030 {background-position: 0 -1131px;}
-.story .i031 {background-position: 0 -1508px;}
-.story .i032 {background-position: 0 -1885px;}
-.story .i033 {background-position: 0 -2262px;}
-.story .i034 {background-position: 0 -2639px;}
-.story .i035 {background-position: 0 -1885px;}
-.story .i036 {background-position: 0 -2262px;}
-.story .i037 {background-position: 0 -2639px;}
-.story .i038 {background-position: 0 -377px;}
-.story .i039 {background-position: 0 -754px;}
-.story .i040 {background-position: 0 -1131px;}
-.story .i041 {background-position: 0 -377px;}
-.story .i042 {background-position: 0 -754px;}
-.story .i043 {background-position: 0 -1131px;}
-.story .i044 {background-position: 0 -1508px;}
-.story .i045 {background-position: 0 -1885px;}
-.story .i046 {background-position: 0 -2262px;}
-.story .i047 {background-position: 0 -2639px;}
-.story .i048 {background-position: 0 -377px;}
-.story .i049 {background-position: 0 -754px;}
-.story .i050 {background-position: 0 -1131px;}
-.story .i051 {background-position: 0 -1508px;}
-.story .i052 {background-position: 0 -1885px;}
-.story .i053 {background-position: 0 -2262px;}
-.story .i054 {background-position: 0 -2639px;}
-.story .i055 {background-position: 0 -1885px;}
-.story .i056 {background-position: 0 -2262px;}
-.story .i057 {background-position: 0 -2639px;}
-.story .i058 {background-position: 0 -377px;}
-.story .i059 {background-position: 0 -754px;}
-.story .i060 {background-position: 0 -1131px;}
-.story .i061 {background-position: 0 -1508px;}
-.story .i062 {background-position: 0 -1885px;}
-.story .i063 {background-position: 0 -2262px;}
-.story .i064 {background-position: 0 -2639px;}
-.story .i065 {background-position: 0 -1885px;}
-.story .i066 {background-position: 0 -2262px;}
-.story .i067 {background-position: 0 -2639px;}
-.story .i068 {background-position: 0 -377px;}
-.story .i069 {background-position: 0 -754px;}
-.story .i070 {background-position: 0 -1131px;}
-.story .i071 {background-position: 0 -377px;}
-.story .i072 {background-position: 0 -754px;}
-.story .i073 {background-position: 0 -1131px;}
-.story .i074 {background-position: 0 -1508px;}
-.story .i075 {background-position: 0 -1885px;}
-.story .i076 {background-position: 0 -2262px;}
-.story .i077 {background-position: 0 -2639px;}
-.story .i078 {background-position: 0 -377px;}
-.story .i079 {background-position: 0 -754px;}
-.story .i080 {background-position: 0 -1131px;}
-.story .i081 {background-position: 0 -1508px;}
-.story .i082 {background-position: 0 -1885px;}
-.story .i083 {background-position: 0 -2262px;}
-.story .i084 {background-position: 0 -2639px;}
-.story .i085 {background-position: 0 -1885px;}
-.story .i086 {background-position: 0 -2262px;}
-.story .i087 {background-position: 0 -2639px;}
-.story .i088 {background-position: 0 -377px;}
-.story .i089 {background-position: 0 -754px;}
-.story .i090 {background-position: 0 -1131px;}
-.story .i091 {background-position: 0 -377px;}
-.story .i092 {background-position: 0 -754px;}
-.story .i093 {background-position: 0 -1131px;}
-.story .i094 {background-position: 0 -1508px;}
-.story .i095 {background-position: 0 -1885px;}
-.story .i096 {background-position: 0 -2262px;}
-.story .i097 {background-position: 0 -2639px;}
-.story .i098 {background-position: 0 -377px;}
-.story .i099 {background-position: 0 -754px;}
-.story .i100 {background-position: 0 -1131px;}
