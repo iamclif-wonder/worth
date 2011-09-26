@@ -26,7 +26,12 @@ img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
    ========================================================================== */
 
 h2 { font-family:'Vollkorn', Arial, Helvetica, serif; font-weight: 400; }
-.power h1, .power h2, .power h3, .power p {font-family:'Vollkorn', Arial, Helvetica, serif;}
+.power h1, .power h2, .power h3, .power p {
+font-family:'Vollkorn', Arial, Helvetica, serif;
+}
+.power p {
+line-height: 2em;
+}
 
 #container {margin: 0;padding: 0;}
 #header {margin: 0;padding: 0;}
@@ -193,7 +198,7 @@ color: #fff;
 height: 25px;
 letter-spacing: 0.08em;
 padding-left: 2px;
-margin-top: -315px;
+margin-top: -320px;
 position: relative;
 z-index: 99;
 }
@@ -203,7 +208,7 @@ position: relative;
 z-index: 99;
 }
 .trigger p {
-font-size: 11.5px;
+font-size: 11px;
 position: relative;
 z-index: 99;
 }
@@ -354,6 +359,9 @@ cursor: pointer;
 position: relative;
 z-index: 9;
 background: none;
+}
+.toggle_container .btn-close {
+margin: 35px 20px 0;
 }
 .story {margin: 20px 0 0 78px;}
 .story .supplement {
