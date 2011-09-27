@@ -3126,7 +3126,7 @@
 					<h2>First Name Last Name 97</h2>
 					<h3>Title, Company or Government Agency</h3>
 				</div>
-				<img class="power-player" src="img/power-player-97.jpg" alt="power player 97"  />
+				<img class="" src="img/power-player-97.jpg" alt="power player 97"  />
 				<div class="supplement">
 					<p><strong>PATH TO POWER:</strong> Geithner is both old world and new. Though born in Brooklyn, he grew up in India, Thailand, Zambia and what is now Zimbabwe. (His father worked for the Ford Foundation.) Geithner attended Dartmouth and Johns Hopkins, but studied Mandarin in China in the early 1980s. For all his travels, he became a Washington animal, working at old-boy consulting firm Kissinger Associates and in the Clinton Treasury under Bob Rubin and Larry Summers. In October 2003, he was named president of thryruggled to find a voice-and a persona-that the public appreciates. As a result, he is distrusted by the right and excoriated by the left even as he leads the President's efforts to rejuvenate the American economy. </p>
 					<p><strong>Path to Power:</strong> Over the summer, Republican congressional leader John Boehner called on the president to fire Geithner. Geithner fought back, telling PBS' NewsHour that GOP partisanship was undercutting efforts to improve the economy. "That's not a political statement-that's reality,"  Geithner said.</p>	
@@ -3223,7 +3223,6 @@
 					<h2>First Name Last Name 100</h2>
 					<h3>Title, Company or Government Agency</h3>
 				</div>
-				
 				<div class="supplement">
 					<p><strong>PATH TO POWER:</strong> Geithner is both old world and new. Though born in Brooklyn, he grew up in India, Thailand, Zambia and what is now Zimbabwe. (His father worked for the Ford Foundation.) Geithner attended Dartmouth and Johns Hopkins, but studied Mandarin in China in the early 1980s. For all his travels, he became a Washington animal, working at old-boy consulting firm Kissinger Associates and in the Clinton Treasury under Bob Rubin and Larry Summers. In October 2003, he was named president of thryruggled to find a voice-and a persona-that the public appreciates. As a result, he is distrusted by the right and excoriated by the left even as he leads the President's efforts to rejuvenate the American economy. </p>
 					<p><strong>Path to Power:</strong> Over the summer, Republican congressional leader John Boehner called on the president to fire Geithner. Geithner fought back, telling PBS' NewsHour that GOP partisanship was undercutting efforts to improve the economy. "That's not a political statement-that's reality,"  Geithner said.</p>	
@@ -3248,16 +3247,12 @@
 			$(".report").slideUp(500);
 		});
 		// look for image if it exist then add class
-		$(function(){
-    		if ($("img.power-player").length === 0) { 
-      			$(".supplement").addClass(".with-img");
-
-    		}else{
-
-      			//Do nothing
-
-    		};
-		});
+		if ($('.power-player').length) {
+    		$(this).next("supplement").addClass(".with-img");
+    		log('yes there is an image');
+				} else {
+    			log('No img elements found');
+				}
 	});
 	</script>
   
