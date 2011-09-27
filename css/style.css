@@ -107,32 +107,9 @@ background: url("../img/hover.png") no-repeat scroll 3px 14px transparent;
 position: relative;
 z-index: 9;
 }
-.power-01 {}
 .rank {background: url("../img/rank.png") no-repeat scroll 96px -2px transparent;}
-
 .power-02 {position: absolute; left: 234px;}
-/* .power-02 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -31px transparent;} */
-
 .power-03 {position: absolute; right: 0;}
-/* .power-03 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -61px transparent;} */
-
-.power-04 {}
-/* .power-04 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -91px transparent;} */
-
-.power-05 {position: absolute; left: 234px;}
-/* .power-05 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -121px transparent;} */
-
-.power-06 {position: absolute; right: 0;}
-/* .power-06 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -151px transparent;} */
-
-.power-07 {}
-/* .power-07 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -181px transparent;} */
-
-.power-08 {position: absolute; left: 234px;}
-/* .power-08 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -211px transparent;} */
-
-.power-09 {position: absolute; right: 0;}
-/* .power-09 .rank {background: url("../img/rankings.png") no-repeat scroll 93px -241px transparent;} */
 
 .power a {
 color: #000;
@@ -295,7 +272,6 @@ width: 78px;
 .story .rank .one00 {
 right: 261px;
 }
-
 .ie7 .story .rank h3 {
 bottom: 8px;
 right: 255px;
@@ -308,20 +284,6 @@ top:15px;
 .story .rank {background: none;}
 .rank .bkg {background:url("../img/rank.png") no-repeat scroll 17px 1px transparent;}
 .rank .ten {background:url("../img/rank.png") no-repeat scroll 9px -29px transparent;}
-/*
-.rank .one {background:url("../img/rankings.png") no-repeat scroll 14px 1px transparent;}
-.rank .two {background:url("../img/rankings.png") no-repeat scroll 14px -29px transparent;}
-.rank .three {background:url("../img/rankings.png") no-repeat scroll 14px -59px transparent;}
-.rank .four {background:url("../img/rankings.png") no-repeat scroll 14px -89px transparent;}
-.rank .five {background:url("../img/rankings.png") no-repeat scroll 14px -119px transparent;}
-.rank .six {background:url("../img/rankings.png") no-repeat scroll 14px -149px transparent;}
-.rank .seven {background:url("../img/rankings.png") no-repeat scroll 14px -179px transparent;}
-.rank .eight {background:url("../img/rankings.png") no-repeat scroll 14px -209px transparent;}
-.rank .nine {background:url("../img/rankings.png") no-repeat scroll 14px -239px transparent;}
-.rank .ten {background:url("../img/rankings.png") no-repeat scroll 8px -269px transparent;}
-.story .rank .ten {background:url("../img/rankings.png") no-repeat scroll 15px -269px transparent;}
-*/
-
 li.name {
 width: 42%;
 height:60px;border-bottom: 1px solid #ccc;
