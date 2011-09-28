@@ -95,10 +95,12 @@ list-style: none;
 float:left;
 display: inline;
 }
+.power-12 {position: relative; float: left;width: 710px;}
 .power {
 margin:0;
 width: 234px;
 height: 370px;
+float: left;
 }
 .power:hover {background: url("../img/hover.png") no-repeat scroll 3px 14px transparent;}
 
@@ -108,8 +110,8 @@ position: relative;
 z-index: 9;
 }
 .rank {background: url("../img/rank.png") no-repeat scroll 96px -2px transparent;}
-.power-02 {position: absolute; left: 234px;}
-.power-03 {position: absolute; right: 0;}
+.power-02 {position: absolute; left: 234px;top:0;}
+.power-03 {position: absolute; right: 0;top:0;}
 
 .power a {
 color: #000;
@@ -180,6 +182,7 @@ position: relative;
 z-index: 99;
 }
 .trigger h3 {
+font-size: 15px;
 text-transform: uppercase;
 position: relative;
 z-index: 99;
@@ -247,9 +250,21 @@ bottom: 27px;
 letter-spacing: .5em;
 left: 3px;
 }
-.ie7 li.rank h3 {
-bottom: 27px;
-right: 1px;
+.ie7 h3.rank  {
+background-position:  100px -2px;
+bottom: 0;
+right: 4px;
+padding-top: 2px;
+}
+.ie7 .directory .rank h3 {
+left: 0;
+}
+.ie7 .report .story .rank h3 {
+right: 255px;
+bottom: 8px;
+}
+.ie7 .report .story .rank h3.one00 {
+right: 265px;
 }
 li.rank .bkg {
 height: 26px; 
@@ -271,10 +286,6 @@ width: 78px;
 }
 .story .rank .one00 {
 right: 261px;
-}
-.ie7 .story .rank h3 {
-bottom: 8px;
-right: 255px;
 }
 .story .rank .bkg {
 height: 26px; 
